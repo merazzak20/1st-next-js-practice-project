@@ -1,8 +1,10 @@
+import Blogs from "./components/Blogs";
+
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center min-h-screen text-center">
+    <main className="flex flex-col min-h-screen text-center">
       <>
-        <h1 className="text-3xl font-bold">Welcome to my website</h1>
+        <Blogs></Blogs>
       </>
     </main>
   );

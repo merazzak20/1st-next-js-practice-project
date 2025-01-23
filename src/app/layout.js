@@ -1,6 +1,12 @@
+// "use client";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import React from "react";
+
+// Initialize a QueryClient instance
+// const queryClient = new QueryClient();
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +29,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar></Navbar>
+        {/* Wrap the app with QueryClientProvider */}
+
+        <Navbar />
         {children}
       </body>
     </html>
