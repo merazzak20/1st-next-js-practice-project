@@ -15,7 +15,11 @@ const Navbar = async () => {
     <nav className="bg-gray-300 p-5">
       <div className="flex justify-between items-center w-11/12 mx-auto">
         <>
-          <div>Logo</div>
+          <div>
+            <Link href="/">
+              <h2 className="text-2xl font-bold">BlogPortal</h2>
+            </Link>
+          </div>
           <div>
             <ul className="space-x-6">
               <Link className="px-2 py-1 border-blue-600 border-2" href="/">
@@ -23,9 +27,9 @@ const Navbar = async () => {
               </Link>
               <Link
                 className="px-2 py-1 border-blue-600 border-2"
-                href="/About"
+                href="/Profile"
               >
-                About
+                Profile
               </Link>
               <div className="mt-5 inline-block">
                 {user ? (
