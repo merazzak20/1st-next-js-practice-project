@@ -22,7 +22,7 @@ const Blogs = () => {
   }, []);
   return (
     <div className="my-7 container mx-auto px-10">
-      <h2 className="text-3xl font-bold">Available Blogs: {blogs.length}</h2>
+      <h2 className="text-xl font-semibold">Available Blogs: {blogs.length}</h2>
       <div className="mt-10">
         {blogs.map((blog, idx) => (
           <SingleBlog key={blog.id} index={idx} blog={blog}></SingleBlog>
